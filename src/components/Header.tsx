@@ -5,7 +5,7 @@ const Header: React.FC = () => {
 
  return (
    <h1>
-     Header is under development
+     Work in progress
    </h1>
   )
 };

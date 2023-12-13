@@ -7,7 +7,9 @@ const HomePage: React.FC = () => {
   return (
     <div>
       <Header />
-      Home Page
+      <h1 class="text-3xl font-bold underline">
+        Hello world!
+      </h1>
     </div>
   );
 };
