@@ -1,21 +1,16 @@
-// App.tsx
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import HomePage from './pages/HomePage';
-import ProductPage from './pages/ProductPage';
-import CartPage from './pages/CartPage';
-import './output.css'
+import Layout from "./layout/Layout";
+import Home from "./pages/Home";
 
+import "./App.css";
+import "./tailwind.css";
 
-const App: React.FC = () => {
+function App() {
+
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/product/:id" element={<ProductPage />} />
-        <Route path="/cart" element={<CartPage />} />
-      </Routes>
-    </Router>
+    <Layout>
+      <Home />
+    </Layout>
   );
-};
+}
 
-export default App;
+export default App
