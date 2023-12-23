@@ -10,7 +10,7 @@ import {
 } from "@heroicons/react/24/outline";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
-const currencies = ["CAD", "USD", "AUD", "EUR", "GBP"];
+const currencies = ["EUR", "USD", "AUD", "CAD", "GBP"];
 const navigation = {
   categories: [
     {
@@ -86,6 +86,7 @@ const Component: React.FC = () => {
 
     return (
       <div>
+        {/* Mobile menu */}
         <Transition.Root show={mobileMenuOpen} as={Fragment}>
           <Dialog
             as="div"
@@ -136,7 +137,7 @@ const Component: React.FC = () => {
                             className={({ selected }) =>
                               classNames(
                                 selected
-                                  ? "border-indigo-600 text-indigo-600"
+                                  ? "border-red-700 text-red-700"
                                   : "border-transparent text-gray-900",
                                 "flex-1 whitespace-nowrap border-b-2 px-1 py-4 text-base font-medium"
                               )
@@ -158,7 +159,7 @@ const Component: React.FC = () => {
                               <div>
                                 <p
                                   id={`mobile-featured-heading-${categoryIdx}`}
-                                  className="font-medium text-gray-900"
+                                  className="font-medium text-gray-900 text-left"
                                 >
                                   Featured
                                 </p>
@@ -390,7 +391,7 @@ const Component: React.FC = () => {
                         <span className="sr-only">Your Company</span>
                         <img
                           className="h-8 w-auto"
-                          src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                          src="Logo/logo.svg"
                           alt=""
                         />
                       </a>
@@ -409,7 +410,7 @@ const Component: React.FC = () => {
                                       <Popover.Button
                                         className={classNames(
                                           open
-                                            ? "border-indigo-600 text-indigo-600"
+                                            ? "border-red-700 text-red-700"
                                             : "border-transparent text-gray-700 hover:text-gray-800",
                                           "relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out"
                                         )}
@@ -441,7 +442,7 @@ const Component: React.FC = () => {
                                                 <div>
                                                   <p
                                                     id={`desktop-featured-heading-${categoryIdx}`}
-                                                    className="font-medium text-gray-900"
+                                                    className="font-medium text-gray-900 text-left"
                                                   >
                                                     Featured
                                                   </p>
@@ -458,7 +459,7 @@ const Component: React.FC = () => {
                                                         >
                                                           <a
                                                             href={item.href}
-                                                            className="hover:text-gray-800"
+                                                            className="text-gray-500 hover:text-gray-900"
                                                           >
                                                             {item.name}
                                                           </a>
@@ -470,7 +471,7 @@ const Component: React.FC = () => {
                                                 <div>
                                                   <p
                                                     id="desktop-categories-heading"
-                                                    className="font-medium text-gray-900"
+                                                    className="font-medium text-gray-900 text-left"
                                                   >
                                                     Categories
                                                   </p>
@@ -487,7 +488,7 @@ const Component: React.FC = () => {
                                                         >
                                                           <a
                                                             href={item.href}
-                                                            className="hover:text-gray-800"
+                                                            className="text-gray-500 hover:text-gray-900"
                                                           >
                                                             {item.name}
                                                           </a>
@@ -501,7 +502,7 @@ const Component: React.FC = () => {
                                                 <div>
                                                   <p
                                                     id="desktop-collection-heading"
-                                                    className="font-medium text-gray-900"
+                                                    className="font-medium text-gray-900 text-left"
                                                   >
                                                     Collection
                                                   </p>
@@ -518,7 +519,7 @@ const Component: React.FC = () => {
                                                         >
                                                           <a
                                                             href={item.href}
-                                                            className="hover:text-gray-800"
+                                                            className="text-gray-500 hover:text-gray-900"
                                                           >
                                                             {item.name}
                                                           </a>
@@ -531,7 +532,7 @@ const Component: React.FC = () => {
                                                 <div>
                                                   <p
                                                     id="desktop-brand-heading"
-                                                    className="font-medium text-gray-900"
+                                                    className="font-medium text-gray-900 text-left"
                                                   >
                                                     Brands
                                                   </p>
@@ -548,7 +549,7 @@ const Component: React.FC = () => {
                                                         >
                                                           <a
                                                             href={item.href}
-                                                            className="hover:text-gray-800"
+                                                            className="text-gray-500 hover:text-gray-900"
                                                           >
                                                             {item.name}
                                                           </a>
@@ -610,7 +611,7 @@ const Component: React.FC = () => {
                     <a href="#" className="lg:hidden">
                       <span className="sr-only">Your Company</span>
                       <img
-                        src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                        src="Logo/logo.svg"
                         alt=""
                         className="h-8 w-auto"
                       />

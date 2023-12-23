@@ -8,7 +8,7 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <div className="container">
+    <div>
       <Header/>
       <main>{children}</main>
       <Footer/>

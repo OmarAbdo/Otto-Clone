@@ -32,7 +32,6 @@ const footerNavigation = {
     { name: "Shipping Policy", href: "#" },
   ],
   bottomLinks: [
-    { name: "Accessibility", href: "#" },
     { name: "Privacy", href: "#" },
     { name: "Terms", href: "#" },
   ],
@@ -48,11 +47,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-200">
           <div className="pb-20 pt-16">
             <div className="md:flex md:justify-center">
-              <img
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt=""
-                className="h-8 w-auto"
-              />
+              <img src="Logo/logo.svg" alt="" className="h-8 w-auto mx-auto" />
             </div>
             <div className="mx-auto mt-16 max-w-5xl xl:grid xl:grid-cols-2 xl:gap-8">
               <div className="grid grid-cols-2 gap-8 xl:col-span-2">
@@ -149,12 +144,12 @@ const Footer: React.FC = () => {
                     type="text"
                     autoComplete="email"
                     required
-                    className="w-full min-w-0 appearance-none rounded-md border border-gray-300 bg-white px-4 py-2 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500"
+                    className="w-full min-w-0 appearance-none rounded-md border border-gray-300 bg-white px-4 py-2 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-red-700 focus:outline-none focus:ring-1 focus:ring-red-700"
                   />
                   <div className="mt-3 sm:ml-4 sm:mt-0 sm:flex-shrink-0">
                     <button
                       type="submit"
-                      className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-white"
+                      className="flex w-full items-center justify-center rounded-md border border-transparent bg-red-700 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-red-700 focus:ring-offset-2 focus:ring-offset-white"
                     >
                       Sign up
                     </button>
@@ -170,7 +165,7 @@ const Footer: React.FC = () => {
                   alt=""
                   className="h-full w-full object-cover object-center saturate-0 filter"
                 />
-                <div className="absolute inset-0 bg-indigo-600 bg-opacity-90" />
+                <div className="absolute inset-0 bg-red-700 bg-opacity-90" />
               </div>
               <div className="relative mx-auto max-w-sm text-center">
                 <h3 className="text-2xl font-bold tracking-tight text-white">
@@ -194,7 +189,7 @@ const Footer: React.FC = () => {
         <div className="py-10 md:flex md:items-center md:justify-between">
           <div className="text-center md:text-left">
             <p className="text-sm text-gray-500">
-              &copy; 2021 All Rights Reserved
+              &copy; {new Date().getFullYear()} All Rights Reserved
             </p>
           </div>
 
@@ -217,7 +212,7 @@ const Footer: React.FC = () => {
                 className="flex items-center text-gray-500 hover:text-gray-600"
               >
                 <img
-                  src="https://tailwindui.com/img/flags/flag-canada.svg"
+                  src="https://flagicons.lipis.dev/flags/4x3/de.svg"
                   alt=""
                   className="h-auto w-5 flex-shrink-0"
                 />

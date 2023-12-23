@@ -135,7 +135,7 @@ const Home: React.FC = () => {
                     <div className="mt-6">
                       <a
                         href="#"
-                        className="inline-block rounded-md border border-transparent bg-indigo-600 px-8 py-3 font-medium text-white hover:bg-indigo-700"
+                        className="inline-block rounded-md border border-transparent bg-red-700 px-8 py-3 font-medium text-white hover:bg-red-800"
                       >
                         Shop Productivity
                       </a>
@@ -166,7 +166,7 @@ const Home: React.FC = () => {
               </h2>
               <a
                 href="#"
-                className="hidden text-sm font-semibold text-indigo-600 hover:text-indigo-500 sm:block"
+                className="hidden text-sm font-semibold text-red-600 hover:text-red-800 sm:block"
               >
                 See everything
                 <span aria-hidden="true"> &rarr;</span>
@@ -197,7 +197,10 @@ const Home: React.FC = () => {
                             {product.color}
                           </p>
                           <h3 className="mt-1 font-semibold text-gray-900">
-                            <a href={product.href}>
+                            <a
+                              href={product.href}
+                              className="text-red-600 hover:text-red-800"
+                            >
                               <span className="absolute inset-0" />
                               {product.name}
                             </a>
@@ -230,7 +233,7 @@ const Home: React.FC = () => {
             <div className="mt-12 px-4 sm:hidden">
               <a
                 href="#"
-                className="text-sm font-semibold text-indigo-600 hover:text-indigo-500"
+                className="text-sm font-semibold text-red-600 hover:text-red-800"
               >
                 See everything
                 <span aria-hidden="true"> &rarr;</span>
@@ -261,7 +264,10 @@ const Home: React.FC = () => {
                       />
                     </div>
                     <h3 className="mt-6 text-sm text-gray-500">
-                      <a href={collection.href}>
+                      <a
+                        href={collection.href}
+                        className="text-red-600 hover:text-red-800"
+                      >
                         <span className="absolute inset-0" />
                         {collection.name}
                       </a>
@@ -309,7 +315,7 @@ const Home: React.FC = () => {
               </p>
               <a
                 href="#"
-                className="mt-6 inline-block w-full rounded-md border border-transparent bg-gray-900 px-8 py-3 font-medium text-white hover:bg-gray-800 sm:w-auto"
+                className="mt-6 inline-block w-full rounded-md border border-transparent bg-red-700 px-8 py-3 font-medium text-white hover:bg-red-800 sm:w-auto"
               >
                 Get access to our one-time sale
               </a>
