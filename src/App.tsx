@@ -1,5 +1,5 @@
 import Layout from "./layout/Layout";
-import Home from "./pages/Home";
+import Home from "./pages/home/home";
 
 import "./App.css";
 import "./tailwind.css";
