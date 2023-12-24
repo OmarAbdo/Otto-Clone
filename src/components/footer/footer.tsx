@@ -181,7 +181,7 @@ const Footer: React.FC = () => {
                   alt=""
                   className="h-auto w-5 flex-shrink-0"
                 />
-                <span className="ml-3 text-sm">Change</span>
+                <span className="ml-3 text-sm">Germany</span>
               </a>
             </div>
           </div>
